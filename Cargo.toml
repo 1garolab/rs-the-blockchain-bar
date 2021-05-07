@@ -1,5 +1,5 @@
 [package]
-name = "gyors_chain"
+name = "gyorschain"
 version = "0.1.0"
 authors = ["1garo <alevardai427@gmail.com>"]
 edition = "2018"
