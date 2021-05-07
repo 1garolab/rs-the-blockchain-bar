@@ -2,3 +2,4 @@
 tx.db
 state.json
 Cargo.lock
+genesis.json
