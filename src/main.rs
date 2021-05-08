@@ -1,6 +1,8 @@
 mod app;
+mod database;
 
-use app::version::version_cmd;
+use app::{tx::tx_cmd, version::version_cmd};
+use database::tx_db;
 
 use std::fs::read_to_string;
 use structopt::StructOpt;
@@ -15,10 +17,11 @@ struct Cli {
 fn main() {
     let args = Cli::from_args();
     let pattern = &args.pattern;
-
     match &pattern[..] {
         "version" => version_cmd(),
-        _ => (),
+        "balances" => tx_cmd(tx_db::Tx::from_args()),
+        "tx" => unimplemented!(),
+        _ => unimplemented!(),
     };
 
     let ctx = read_to_string(&args.path);
