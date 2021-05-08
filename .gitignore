@@ -1,5 +1,5 @@
 /target
-tx.db
+tx.json
 state.json
 Cargo.lock
 genesis.json
