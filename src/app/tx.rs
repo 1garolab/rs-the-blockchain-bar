@@ -1,4 +1,4 @@
-use crate::database::{genesis, state, tx_db};
+use crate::database::{genesis, tx_db};
 const FLAG_FROM: &str = "from";
 const FLAG_TO: &str = "to";
 const FLAG_VALUE: &str = "value";
