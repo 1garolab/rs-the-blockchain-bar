@@ -5,14 +5,11 @@ use app::{balances::balances_cmd, tx::tx_cmd, version::version_cmd};
 use database::tx_db;
 
 use std::env;
-use std::fs::read_to_string;
 use structopt::StructOpt;
 
 #[derive(StructOpt)]
 struct Cli {
     pattern: String,
-    #[structopt(parse(from_os_str))]
-    path: std::path::PathBuf,
 }
 
 fn main() {
